@@ -6,6 +6,7 @@ public class Demo3 {
     public static void main(String[] args) {
         int[] stones = {2,7,4,1,8,1};
         System.out.println(lastStoneWeight(stones));
+        System.out.println("中文");
     }
 
     public static int lastStoneWeight(int[] stones) {
