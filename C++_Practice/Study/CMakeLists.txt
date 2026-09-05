@@ -16,4 +16,5 @@ add_executable(Study main.cpp
         "Threaded BinaryTree/InTree.c"
         "Threaded BinaryTree/PreTree.c"
         "Threaded BinaryTree/PostTree.c"
+        BST/BST.c
 )
