@@ -271,3 +271,41 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/c,c++,java,python
+
+### Database / SQL ###
+# 本段为手动追加，Toptal 生成器不会覆盖它；若重新生成整个文件，需要手动再追加一次
+
+# 本地数据库文件（SQLite 已在 Python 段忽略，这里覆盖其他格式）
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.mdb
+*.accdb
+*.frm
+*.ibd
+*.myd
+*.myi
+
+# 数据库转储 / 备份
+# 注意：*.sql 是要提交的练习脚本，千万不要把 *.sql 加进忽略列表
+*.dump
+*.bak
+*.sql.gz
+*.sql.bz2
+*.sql.zip
+
+# 凭据与本地配置（连接串、密码一律走这里，不要写进 .sql）
+.env
+.env.*
+!.env.example
+*.cnf
+config.local.*
+secrets.*
+
+# MySQL 客户端历史
+.mysql_history
+mysql_history
+
+# 提示：上方 Python 段的 lib/ 与 var/ 是目录级通配，若将来 SQL 项目里出现同名目录会被忽略；
+# 需要放行时用 !SQL_Practice/lib/ 这样的反向规则
